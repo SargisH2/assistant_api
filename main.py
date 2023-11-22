@@ -10,7 +10,7 @@ from pydantic import BaseModel
 
 ASSISTANT_ID = 'asst_8VWwHooSU70gUK7vHkHvnSRB'
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 SERPAPI_API_KEY = 'd277c1be0ca1168875f9e3d817e0b17ff3e3b8b21cbce42dbe10938116c73cb5'
 
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
