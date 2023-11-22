@@ -4,7 +4,7 @@ import time
 from openai import OpenAI
 from serpapi import GoogleSearch
 
-import uvicorn
+# import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 
@@ -131,5 +131,5 @@ def handle(query: str, id: str = '') -> tuple:
 
 
 
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=4000)
+# if __name__ == '__main__':
+#     uvicorn.run(app, host='127.0.0.1', port=4000)
