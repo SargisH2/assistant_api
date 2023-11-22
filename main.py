@@ -10,10 +10,10 @@ from pydantic import BaseModel
 
 ASSISTANT_ID = 'asst_8VWwHooSU70gUK7vHkHvnSRB'
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "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"
 SERPAPI_API_KEY = 'd277c1be0ca1168875f9e3d817e0b17ff3e3b8b21cbce42dbe10938116c73cb5'
 
-OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+
 
 client = OpenAI()
 assistant = client.beta.assistants.retrieve(ASSISTANT_ID)
