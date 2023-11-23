@@ -32,7 +32,7 @@ def index():
 def gsearch(data: Details):
     query = data.query
     chat_id = data.chat_id
-    chat = handle(query, chat_id)
+    chat_id, chat = handle(query, chat_id)
     return {
         'id':  chat_id,
         'chat': chat
@@ -127,7 +127,7 @@ def handle(query: str, id: str = '') -> tuple:
     messages = client.beta.threads.messages.list(
         thread_id=thread.id
     ).data
-    return list(map(lambda message: {message.role: message.content[0].text.value}, reversed(messages)))
+    return id, list(map(lambda message: {message.role: message.content[0].text.value}, reversed(messages)))
 
 
 
