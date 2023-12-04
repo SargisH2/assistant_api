@@ -8,7 +8,7 @@ from serpapi import GoogleSearch
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-ASSISTANT_ID = 'asst_8VWwHooSU70gUK7vHkHvnSRB'
+ASSISTANT_ID = 'asst_D2xmXX3XThCPjoPaxLdYt6mr'
 
 # os.environ['OPENAI_API_KEY'] = "sk-..."
 SERPAPI_API_KEY = os.environ['SERPAPI_API_KEY']
